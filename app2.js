@@ -8,7 +8,7 @@ const createDomains = () => {
         for (a in adj) {
             for (n in noun) {
                 for (d in domains){
-                    let str=`${pronoun[p]}${adj[a]}${noun[n] == "claudio" ? "felipe": "Casa" }`
+                    let str=`${pronoun[p]}${adj[a]}${noun[n]}`
                     if(str.includes(domains[d])){
                         let newStr = str.replace(domains[d], "");
                         finalStr = `${newStr}.${domains[d]}`
